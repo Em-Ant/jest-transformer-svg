@@ -15,7 +15,7 @@
     "url": "https://github.com/Em-Ant/jest-transformer-svg.git/issues"
   },
   "scripts": {
-    "test": "tsc --outDir ./tmp --declaration false && jest",
+    "test": "tsc --outDir ./tmp --declaration false && jest --no-cache",
     "build": "tsc",
     "prepare": "npm test && npm build"
   },
