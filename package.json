@@ -1,0 +1,26 @@
+{
+  "name": "jest-transformer-svg",
+  "version": "1.0.0",
+  "description": "a jest transformer for testing with svgs in react",
+  "main": "/lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc ./src/index.ts --module commonJS --declaration --outDir ./lib"
+  },
+  "keywords": [
+    "test",
+    "jest",
+    "svg",
+    "react",
+    "transformer"
+  ],
+  "peerDependencies": {
+    "jest": "^27.0.6",
+    "react": "^17.0.2"
+  },
+  "author": "Em-Ant",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  }
+}
