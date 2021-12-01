@@ -16,8 +16,7 @@
   },
   "scripts": {
     "test": "tsc --outDir ./tmp --declaration false && jest --no-cache",
-    "build": "tsc",
-    "prepare": "npm test && npm build"
+    "build": "tsc"
   },
   "keywords": [
     "test",
