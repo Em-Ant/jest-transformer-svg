@@ -1,6 +1,6 @@
 {
   "name": "jest-transformer-svg",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a jest transformer for testing with svg files in react",
   "main": "lib/index.js",
   "files": [
