@@ -1,19 +1,20 @@
-const path = require("path");
+const path = require('path');
 
 function escapeFileName(str: string) {
-  return `svg-${path.basename(str, ".svg")}`
+  return `svg-${path.basename(str, '.svg')}`
     .split(/\W+/)
     .map((x) => `${x.charAt(0).toUpperCase()}${x.slice(1)}`)
-    .join("");
+    .join('');
 }
 
 const transform = (src: string, filePath: string) => {
-  if (path.extname(filePath) !== ".svg") {
+  if (path.extname(filePath) !== '.svg') {
     return src;
   }
 
   const name = escapeFileName(filePath);
-  return `
+  return {
+    code: `
 const React = require('react');
 function ${name}(props) {
   return React.createElement(
@@ -22,7 +23,8 @@ function ${name}(props) {
   );
 }
 module.exports = ${name};
-`;
+`,
+  };
 };
 
 export default {
