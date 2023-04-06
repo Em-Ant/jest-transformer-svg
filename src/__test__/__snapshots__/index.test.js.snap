@@ -11,7 +11,7 @@ exports[`TestComponent should render svg child with correct props 1`] = `
     data-file-name="SvgExampleAsset"
     foo="bar"
     style={
-      Object {
+      {
         "height": "100px",
       }
     }
