@@ -1,4 +1,4 @@
-const path = require('path');
+import * as path from 'path';
 
 function escapeFileName(str: string) {
   return `svg-${path.basename(str, '.svg')}`

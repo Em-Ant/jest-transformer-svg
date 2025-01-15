@@ -1,5 +1,5 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
 
 import SvgComponent from './example-asset.svg';
 
@@ -13,7 +13,6 @@ function TestComponent() {
 }
 
 test('TestComponent should render svg child with correct props', () => {
-  const component = renderer.create(<TestComponent />);
-  let tree = component.toJSON();
-  expect(tree).toMatchSnapshot();
+  const { container } = render(<TestComponent />);
+  expect(container).toMatchSnapshot();
 });

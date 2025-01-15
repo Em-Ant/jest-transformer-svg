@@ -2,19 +2,17 @@
 
 exports[`TestComponent should render svg child with correct props 1`] = `
 <div>
-  <span
-    className="heading"
-  >
-    Title
-  </span>
-  <svg
-    data-file-name="SvgExampleAsset"
-    foo="bar"
-    style={
-      {
-        "height": "100px",
-      }
-    }
-  />
+  <div>
+    <span
+      class="heading"
+    >
+      Title
+    </span>
+    <svg
+      data-file-name="SvgExampleAsset"
+      foo="bar"
+      style="height: 100px;"
+    />
+  </div>
 </div>
 `;
