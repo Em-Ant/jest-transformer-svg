@@ -6,13 +6,13 @@
   "files": [
     "lib/**/*"
   ],
-  "homepage": "https://github.com/Em-Ant/jest-transformer-svg.git#readme",
+  "homepage": "https://github.com/Em-Ant/jest-transformer-svg#readme",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:Em-Ant/jest-transformer-svg.git"
+    "url": "git+https://github.com/Em-Ant/jest-transformer-svg.git"
   },
   "bugs": {
-    "url": "https://github.com/Em-Ant/jest-transformer-svg.git/issues"
+    "url": "https://github.com/Em-Ant/jest-transformer-svg/issues"
   },
   "scripts": {
     "test": "tsc --outDir ./tmp --declaration false && jest --no-cache",
